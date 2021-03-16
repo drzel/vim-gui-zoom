@@ -10,19 +10,19 @@ endif
 
 let g:loaded_gui_zoom = 1
 
-function! FontSizePlus()
+function! ZoomIn()
 	let l:gf_size_whole = matchstr(&guifont, '\(:h\)\@<=\d\+$')
 	let l:gf_size_whole = l:gf_size_whole + 1
 	let l:new_font_size = ':h'.l:gf_size_whole
 	let &guifont = substitute(&guifont, ':h\d\+$', l:new_font_size, '')
 endfunction
 
-function! FontSizeMinus()
+function! ZoomOut()
 	let l:gf_size_whole = matchstr(&guifont, '\(:h\)\@<=\d\+$')
 	let l:gf_size_whole = l:gf_size_whole - 1
 	let l:new_font_size = ':h'.l:gf_size_whole
 	let &guifont = substitute(&guifont, ':h\d\+$', l:new_font_size, '')
 endfunction
 
-command! FontSizePlus call FontSizePlus()
-command! FontSizeMinus call FontSizeMinus()
+command! ZoomIn call ZoomIn()
+command! ZoomOut call ZoomOut()

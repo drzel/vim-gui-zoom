@@ -20,6 +20,6 @@ Define a `guifont`, and map your keys. My config:
 
 ```vim
 set guifont=DejaVuSansMono\ Nerd\ Font:h16
-nmap <c--> :FontSizeMinus<CR>
-nmap <c-+> :FontSizePlus<CR>
+nmap <c-+> :ZoomIn<CR>
+nmap <c--> :ZoomOut<CR>
 ```
