@@ -1,6 +1,6 @@
 # vim-gui-zoom
 
-Add zoom-in and zoom-out commands to guivim.
+Provides `:ZoomIn` and `:ZoomOut` commands.
 
 
 ## Why?
